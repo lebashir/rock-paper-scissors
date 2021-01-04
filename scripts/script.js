@@ -15,7 +15,7 @@ buttons.forEach((button) => {
 })
 function checkWinner() {
     if (playerScore == 3) {
-        return result.innerHTML="<span>YOU WIN YOU ARE AWESOME</span>";    
+        result.innerHTML="<span>YOU WIN YOU ARE AWESOME</span>";   
     } else if (computerScore ==3){
         return result.innerHTML="<span>PC OVERLORD WINS</span>"; 
     }
@@ -84,6 +84,8 @@ function computerPlay() {
                 result.innerHTML='<span>Its a tie!</span>';
             }
             checkWinner();
+                
+            
         console.log(playerScore)
         console.log(computerScore)
     }
